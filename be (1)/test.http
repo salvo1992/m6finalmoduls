@@ -1,0 +1,43 @@
+GET http://localhost:3030/getUsers
+
+####
+POST http://localhost:3030/createUser
+Content-Type: application/json
+
+{
+  "firstName": "marco",
+  "lastName": "colia",
+  "email": "mcolia@gmail.com",
+  "password": "ciao",
+  "age": 40
+}
+
+####
+GET http://localhost:3030/getUsers/65ef5f1348db944f546d804
+
+####
+PATCH http://localhost:3030/updateUser/65ef65c2f0afd5d49ac93a5e
+Content-Type: application/json
+
+{
+  "age": 80
+}
+
+####
+DELETE http://localhost:3030/deleteUser/65ef5f1348db944f5046d804
+
+#####
+GET http://localhost:3030/getUsers/byName/lor
+
+####
+GET http://localhost:3030/getUsers/byAge/diciotto
+####
+POST http://localhost:3030/login
+Content-Type: application/json
+
+{
+  "email": "mcolia@gmail.com",
+  "password": "ciao"
+}
+
+
