@@ -1,7 +1,0 @@
-POST http://localhost:3030/comment/create
-Content-Type: application/json
-
-{
-  "comment": "Commento 1",
-  "rate": 3
-}
