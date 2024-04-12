@@ -14,7 +14,7 @@ const emailRoute = require('./routes/sendEmail');
 const githubRoute = require('./routes/github');
 
 
-const PORT = 3030;
+const PORT = 6060;
 const app = express();
 
 //middleware

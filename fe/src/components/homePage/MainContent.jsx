@@ -31,7 +31,7 @@ const MainContent = () => {
     const getBooks = async () => {
         setIsLoading(true)
         try {
-            const response = await fetch(`http://localhost:3030/books?page=${page}&pageSize=${pageSize}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/books?page=${page}&pageSize=${pageSize}`, {
                 method: 'GET',
                 headers: {
                     "Content-type": 'application/json',
