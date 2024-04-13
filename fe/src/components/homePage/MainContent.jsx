@@ -55,11 +55,11 @@ const MainContent = () => {
         <div className="container pt-5 pb-5">
             <div className="row">
                 <div className="col pb-4">
-                    <select onChange={onChangePageSize} >
-                        <option value={4}>Quattro</option>
-                        <option value={7}>Sette</option>
-                        <option value={10}>Dieci</option>
-                    </select>
+                <select value={pageSize} onChange={onChangePageSize}>
+    <option value={4}>Quattro</option>
+    <option value={7}>Sette</option>
+    <option value={10}>Dieci</option>
+</select>
                 </div>
             </div>
             <div className="row">

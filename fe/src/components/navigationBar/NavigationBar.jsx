@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
-import useSession from "../../hooks/useSession";
-import AddBookModal from "../addBookModal/AddBookModal";
+import React, { useState } from 'react';
+import useSession from '../../hooks/useSession';
+import AddBookModal from '../addBookModal/AddBookModal';
 
 const NavigationBar = () => {
-    const [isAddBookModalOpen, setIsAddBookModalOpen] = useState(false)
-    const session = useSession()
-    const toggleAddBookModal = () => setIsAddBookModalOpen(!isAddBookModalOpen)
+    const [isAddBookModalOpen, setIsAddBookModalOpen] = useState(false);
+    const session = useSession();
+    const toggleAddBookModal = () => setIsAddBookModalOpen(!isAddBookModalOpen);
 
     return (
         <>
@@ -13,10 +13,7 @@ const NavigationBar = () => {
                 <div className="container">
                     <div className="row w-100">
                         <div className="col-3">
-                            <a
-                                className="navbar-brand d-flex align-items-center"
-                                href="#"
-                            >
+                            <a className="navbar-brand d-flex align-items-center" href="/">
                                 <img
                                     src="https://picsum.photos/340/340"
                                     alt="Logo"
@@ -30,11 +27,7 @@ const NavigationBar = () => {
                         <div className="col-9 d-flex justify-content-end align-items-center">
                             <ul className="d-flex justify-content-end align-items-center list-unstyled gap-3">
                                 <li className="nav-item">
-                                    <a
-                                        className="nav-link active"
-                                        aria-current="page"
-                                        href="#"
-                                    >
+                                    <a className="nav-link active" aria-current="page" href="/">
                                         Home
                                     </a>
                                 </li>
@@ -45,10 +38,7 @@ const NavigationBar = () => {
                                 </li>
                                 {session && (
                                     <li className="nav-item">
-                                        <button
-                                            onClick={toggleAddBookModal}
-                                            className="btn btn-primary"
-                                        >
+                                        <button onClick={toggleAddBookModal} className="btn btn-primary">
                                             Aggiungi Libro
                                         </button>
                                     </li>
@@ -66,7 +56,9 @@ const NavigationBar = () => {
                 />
             )}
         </>
-    )
-}
+    );
+};
 
-export default NavigationBar
+export default NavigationBar;
+
+

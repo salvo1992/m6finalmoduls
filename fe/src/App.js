@@ -5,6 +5,7 @@ import ProtectedRoutes from "./middlewares/ProtectedRoutes";
 import Success from "./pages/Success";
 
 const App = () => {
+    console.log(process.env);
     return (
         <Router>
             <Routes>
