@@ -1,0 +1,50 @@
+// styles.scss
+
+// Definizione dei colori
+$color-sand: #e6d3ba;
+$color-brown: #6b4423;
+
+// Navbar stile di base
+.navbar {
+  background-color: $color-sand;
+  transition: background-color 0.3s ease; // Transizione per la modifica del colore allo scroll
+  border-bottom: 1px solid $color-brown; // Aggiunta di una sottile linea di separazione
+
+  .navbar-brand {
+    img {
+      // Stile per il logo
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      // Stile per i link della navbar
+      color: $color-brown;
+
+      &:hover {
+        // Effetto hover per i link
+        color: darken($color-brown, 10%);
+      }
+    }
+
+    .btn {
+      // Stile per il bottone "Aggiungi Libro"
+      background-color: $color-brown;
+      color: $color-sand;
+
+      &:hover {
+        background-color: darken($color-brown, 10%);
+      }
+    }
+  }
+}
+
+// Stile per la navbar trasparente
+.navbar.transparent {
+  background-color: transparent;
+}
+
+// Stile per la navbar con il logo utente
+.navbar.with-user-logo {
+  // Aggiungere stili per il logo utente qui
+}
